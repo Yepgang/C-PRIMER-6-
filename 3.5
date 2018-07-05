@@ -1,0 +1,19 @@
+#include <iostream>
+int main()
+{
+	using namespace std;
+	cout<<"Enter the world's population: ";
+ 	long long wp;
+	cin>>wp;
+	cout<<endl<<"Enter the population of the US: ";
+ 	long long up;
+	cin>>up;
+	double percent;
+	percent = up*100;
+	percent = percent/wp;
+ 	cout<<endl<<"The population of the US is "
+ 		<<percent<<"% of the world's population";
+    cin.get();
+    cin.get();
+    return 0;
+}
