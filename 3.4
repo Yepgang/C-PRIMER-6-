@@ -1,0 +1,26 @@
+#include <iostream>
+const int M=60;
+const int H=60;
+const int D=24;
+int main()
+{
+	using namespace std;
+	cout<<"Enter the number of seconds：";
+ 	long s;
+	cin>>s;
+	int d,h,m,s1,s2;
+	d = s/(M*H*D);
+	s1 = s%(M*H*D);
+	h = s1/(M*H); 
+	s2 = s1%(M*H);
+	m = s2/H;
+	s = s2%H;
+ 	cout<<endl<<s<<" seconds = "
+ 		<<d<<" days, "
+ 		<<h<<" hours, "
+ 		<<m<<" minutes, "
+ 		<<s<<" seconds";
+    cin.get();
+    cin.get();
+    return 0;
+}
