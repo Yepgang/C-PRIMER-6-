@@ -1,0 +1,22 @@
+#include <iostream>
+const int D=60;
+const int M=60;
+int main()
+{
+	using namespace std;
+	cout<<"Enter a latitude in degrees,Minute,an seconds："<<endl;
+	cout<<"First,enter the degreess: ";
+ 	int d;
+	cin>>d;
+ 	cout<<"\nNext,enter the minutes of arc: ";
+	int m;
+ 	cin>>m;
+	cout<<"\nFinally,enter the seconds of arc: ";
+ 	int s;
+	cin>>s;
+ 	cout<<d<<" degreess ,"<<m<<" minutes, "<<s<<" seconds"
+		<<" = "<<float(m/D+s/M/D+d)<<"degress"<<endl;
+    cin.get();
+    cin.get();
+    return 0;
+}
