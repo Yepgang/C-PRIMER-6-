@@ -1,0 +1,16 @@
+#include <iostream>
+#include<string>
+int main()
+{
+	using namespace std;
+	string fname;
+	string lname;
+	cout<<"Enter your first name:";
+	getline(cin,fname);
+	cout<<endl<<"Enter your last name:";
+	getline(cin,lname);
+	cout<<endl<<"Here's the information in a single string "
+		<<lname<<", "<<fname;
+	cin.get();
+	return 0;
+}
