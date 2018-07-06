@@ -1,0 +1,27 @@
+#include <iostream>
+#include<string>
+using namespace std;
+struct CandyBar
+{
+	string name;
+	double weight;
+	int kaluli;
+};
+void Show(CandyBar example);
+int main()
+{
+	CandyBar snack[3]={{"shit1",1.5,20},{"shit2",1.5,20},{"shit3",1.5,20}};
+	for(int i=0;i<3;i++)
+	{
+		Show(snack[i]);
+	}
+	cin.get();
+	cin.get();
+	return 0;
+}
+void Show(CandyBar example)
+{
+	cout<<"\nname:"<<example.name
+		<<";weight:"<<example.weight
+		<<";kaluli:"<<example.kaluli;
+}
