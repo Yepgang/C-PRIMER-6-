@@ -1,0 +1,17 @@
+#include <iostream>
+#include <array>
+using namespace std;
+void main()
+{
+	array <int,3> ar;
+	int sum=0
+	for(int i=0;i<3;i++)
+	{
+		cout<<"Enter the "<<i+1<<"th time :";
+		cin>>ar[i];
+		sum+=ar[i];
+	}
+	double pinjun;
+	cout<<"平均成绩为："<<sum/3.0<<endl;
+	cin.get();
+}
