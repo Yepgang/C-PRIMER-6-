@@ -1,0 +1,30 @@
+#include <iostream>
+#include<string>
+using namespace std;
+struct CandyBar
+{
+	string name;
+	double weight;
+	int kaluli;
+};
+void Show(CandyBar example);
+int main()
+{
+	CandyBar *snake = new CandyBar[3];	
+	for(int i=0;i<3;i++)
+	{
+		snake[i].name="i"+i;
+		snake[i].weight=i;
+		snake[i].kaluli=i;		
+		Show(snake[i]);
+	}
+	cin.get();
+	cin.get();
+	return 0;
+}
+void Show(CandyBar example)
+{
+	cout<<"\nname:"<<example.name
+		<<";weight:"<<example.weight
+		<<";kaluli:"<<example.kaluli;
+}
