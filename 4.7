@@ -8,7 +8,7 @@ struct Pizza
 	double w;
 };
 void get(Pizza &p);
-void show(const Pizza &p);
+void show(Pizza p);
 
 int main()
 {
@@ -35,7 +35,7 @@ void get(Pizza &p)
 	return;
 }
 
-void show(const Pizza &p)
+void show(Pizza p)
 {
 	cout<<"name="<<p.name<<" ,d="<<p.d<<" ,weight="<<p.w<<endl;
 	return;
