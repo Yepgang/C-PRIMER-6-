@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+	char test[40];
+	int count=0;
+	char ch;
+	int i=0;
+	cout<<"Enter words (to stop,type the word done):\n";
+	while(strcmp(test,"done")!=0)
+	{
+		cin.get(ch);
+		if(ch==' ')
+		{
+			test[i]='\0';
+			count++;
+			i=0;		
+		}
+		else
+		{	
+			test[i]=ch;
+			test[i+1]='\0';
+			i++;
+		}
+	}
+	cout<<"You entered a total of "<<count<<" words";
+	cin.get();	
+	return 0;
+}
