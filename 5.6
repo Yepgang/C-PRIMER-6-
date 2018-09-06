@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char arr[15]={'1','2','3','4','5','6','7','8','9','0','1','2'};
+	char *c=arr;
+	int num[3][12];
+	int sum[3]={0};
+	for(int j=0;j<3;j++)
+	{
+		for(int i=0;i<12;i++,c++)
+		{
+			if(i<9)
+			{
+				cout<<"\nThe "<<*c<<" month number is ";
+				cin>>num[j][i];
+				sum[j]+=num[j][i];
+			}
+			else
+			{
+				cout<<"\nThe 1"<<*c<<" month number is ";
+				cin>>num[j][i];
+				sum[j]+=num[j][i];
+			}
+		}
+		cout<<"This year num is "<<sum[j]<<endl;
+		c=arr;
+	}
+	cout<<"\nall 3 years num is "<<(sum[0]+sum[1]+sum[2])<<endl;
+	cin.get();
+	return 0;
+}
