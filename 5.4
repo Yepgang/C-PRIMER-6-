@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double csum=100;
+	double dsum=100;
+	int i = 0;
+	while(dsum<=csum)
+	{
+		csum += 10;
+		dsum += dsum*0.05;
+		i++;
+	}
+	cout<<"after "<<i<<" years,csum is bigger than dsum"<<endl;
+	cout<<"\ncsum = "<<csum<<";dsum = "<<dsum;
+	cin.get();
+	return 0;
+}
