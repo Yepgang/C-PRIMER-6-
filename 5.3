@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout<<"please input the number(if 0,end ):";
+	int input,sum = 0;
+	cin>>input;
+	while(input)
+	{
+		sum += input;
+		cout<<"\nthe sum of the input is:"
+			<<sum;
+		cout<<"\nplease input the number(if 0,end ):";
+		cin>>input;
+	}
+	cin.get();
+	return 0;
+}
