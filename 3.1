@@ -1,0 +1,16 @@
+#include <iostream>
+int main()
+{
+	using namespace std;
+	const int i=12;
+	cout<<"please input your height(inch):";
+	int h;
+	cin>>h;
+	cout<<endl
+		<<"your height is:"
+		<<(h/i)<<"(foot)"
+		<<(h%i)<<"(inch)";
+	cin.get();
+	cin.get();
+	return 0;	
+}

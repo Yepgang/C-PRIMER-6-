@@ -1,0 +1,33 @@
+#include <iostream>
+int main()
+{
+	using namespace std;
+	const int i=12;
+	const float j=2.2;
+	const float l=0.0254;
+	cout<<"input your height(foot):";
+	int hf;
+	cin>>hf;
+	cout<<endl<<"input your height(inch):";
+	int hi;
+	cin>>hi;
+	cout<<endl<<"input your weight(pound):";
+	float wp;
+	cin>>wp;
+	float f=hf*i+hi;
+	float m=f*l;
+	float k=wp*j;
+	cout<<endl
+		<<"your height is:"
+		<<f<<"(inch)or"
+		<<m<<"(meter)";
+	cout<<endl
+		<<"your weight is:"
+		<<k<<"(kg)";
+	cout<<endl
+		<<"BMI="
+		<<k/m;
+	cin.get();
+	cin.get();
+	return 0;	
+}
